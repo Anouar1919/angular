@@ -3,7 +3,7 @@
   docker_image:
     name: jelassioussema/devops
     build:
-      path: /var/lib/jenkins/workspace/livraison
+      path: /var/lib/jenkins/workspace/validation
       pull: no 
     source: build
     state: present
