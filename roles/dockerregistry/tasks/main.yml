@@ -1,0 +1,17 @@
+---
+
+- name: Log into DockerHub
+  docker_login:
+    username: jelassioussema
+    password: 193JMT1459a.
+    email: oussema.jelassi1@esprit.tn
+    
+
+    
+- name: Push image to registry
+  docker_image:
+    name: jelassioussema/devops:latest
+    repository: jelassioussema/devops
+    push: yes
+    source: local
+
